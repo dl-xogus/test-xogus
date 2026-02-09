@@ -8,3 +8,19 @@ git branch -v              : 브랜치 확인
 git add .
 git commit -m "할말"
 git push -u origin 브랜치명
+
+
+#개발 팀장님
+브랜치 변경 (dev) <- xogus (git merge xogus)
+
+#모든 작업이 main브랜치에 병합이 되면...
+브랜치 변경 (main) <- dev (git merge dev)
+
+#모든 팀원
+ㄴgit pull origin main (메인브랜치에서 파일 및 히스토리 가져오기)
+ㄴgit add .
+ㄴgit commit -m '123123'
+ㄴgit push origin xogus
+
+
+git pull origin main --arrow-unrelated-histories (메인브랜치와 히스토리를 똑같이 맞춤)
